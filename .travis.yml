@@ -1,4 +1,6 @@
 sudo: required
+language: generic
+
 services:
   - docker
 
@@ -7,5 +9,3 @@ before_install:
 
 script:
   - docker run -e CI=true icarus2io/docker-react npm run test
-
-language: generic 
